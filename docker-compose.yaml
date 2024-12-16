@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  cron-java:
+    container_name: b_http-java
+    image: vdisk/http-java:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
